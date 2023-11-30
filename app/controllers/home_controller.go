@@ -1,6 +1,10 @@
 package controllers
 
-import "net/http"
+import (
+	"fmt"
+	"net/http"
+)
+
 func Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, format: "Selamat Datang di Toko Event")
+	fmt.Fprintf(w, "Selamat Datang di Toko Event")
 }

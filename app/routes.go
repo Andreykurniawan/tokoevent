@@ -1,7 +1,9 @@
-package main
+package app
 
-func main(server *server) initializeRoutes() {
+import "github.com/Andreykurniawan/tokoevent/app/controllers"
 
-	server.Router.HandleFunc( path "/", controllers.Home).Methods(methods...: "GET")
+func main(server *Server) initializeRoutes() {
+
+	server.Router.HandleFunc( path: "/", controllers.Home).Methods( methods...: "GET")
 	
 }
